@@ -1,0 +1,567 @@
+/* custom fonts */
+@font-face {
+    font-family: 'neue1';
+    src: url(../fonts/NeueMachina-Light.otf);
+}
+
+@font-face {
+    font-family: 'neue2';
+    src: url(../fonts/NeueMachina-Regular.otf);
+}
+
+@font-face {
+    font-family: 'neue3';
+    src: url(../fonts/NeueMachina-Ultrabold.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    /* overflow-x: hidden; */
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+/* header section styling start here */
+header {
+    width: 100%;
+    height: inherit;
+    background-color: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.108);
+}
+
+.header-main {
+    padding: 1.5rem 4rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.herder-left img {
+    width: 6rem;
+}
+
+.header-right ul {
+    margin-bottom: 0 !important;
+}
+
+.header-right ul li {
+    display: inline;
+    padding: 0 .4rem;
+}
+
+.header-right ul li a {
+    color: black;
+    text-decoration: none;
+    font-family: 'neue2';
+    color: #115cfa;
+}
+
+
+/* post section start here */
+.post-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashbord-post {
+    padding: 6rem 10rem;
+}
+
+.post-img {
+    width: 15rem;
+    height: 10rem;
+}
+
+
+.post-img img {
+    width: inherit;
+    height: inherit;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: absolute;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: .5s;
+}
+
+
+.post-title {
+    font-size: 24px;
+    font-family: 'neue2';
+    color: black;
+    transition: .5s;
+    cursor: pointer;
+}
+
+
+
+.post-title:hover {
+    font-size: 24px;
+    font-family: 'neue2';
+    color: #115cfa;
+}
+
+
+.post-title-main {
+    display: flex;
+    /* align-content: stretch; */
+    width: 45%;
+    justify-content: flex-start;
+}
+
+.update-button {
+    background-color: #115cfa;
+    color: white;
+    font-family: 'neue2';
+    text-decoration: none;
+    padding: 1rem 3rem;
+    border: 1px solid #115cfa;
+    border-radius: 4px;
+    transition: .5s;
+    margin-right: 1rem !important;
+}
+
+.update-button:hover {
+    background-color: transparent;
+    color: #115cfa;
+    font-family: 'neue2';
+    text-decoration: none;
+    padding: 1rem 3rem;
+    border: 1px solid #115cfa;
+    border-radius: 4px;
+}
+
+.delete-button {
+    background-color: #fa114f;
+    color: white;
+    font-family: 'neue2';
+    text-decoration: none;
+    padding: 1rem 3rem;
+    border: 1px solid #fa114f;
+    border-radius: 4px;
+    transition: .5s;
+}
+
+.delete-button:hover {
+    background-color: transparent;
+    color: #fa114f;
+    font-family: 'neue2';
+    text-decoration: none;
+    padding: 1rem 3rem;
+    border: 1px solid #fa114f;
+    border-radius: 4px;
+}
+
+.post-button-main {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 30%;
+}
+
+.hr-bottom {
+    width: 100%;
+    height: 1px;
+    background-color: #7d7d7d5f;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* responsiveness for laptop */
+@media (min-width: 1000px) and (max-width: 1100px) {
+    .dashbord-post {
+        padding: 6rem 4rem;
+    }
+
+    .post-title {
+        font-size: 20px;
+        font-family: 'neue2';
+        color: black;
+        transition: .5s;
+        cursor: pointer;
+    }
+
+    .update-button {
+        background-color: #115cfa;
+        color: white;
+        font-family: 'neue2';
+        text-decoration: none;
+        padding: 0.6rem 2rem;
+        border: 1px solid #115cfa;
+        border-radius: 4px;
+        transition: .5s;
+        margin-right: 1rem !important;
+        font-size: 14px;
+    }
+
+    .update-button:hover {
+        background-color: transparent;
+        color: #115cfa;
+        font-family: 'neue2';
+        text-decoration: none;
+        padding: 0.6rem 2rem;
+        border: 1px solid #115cfa;
+        border-radius: 4px;
+        transition: .5s;
+        margin-right: 1rem !important;
+        font-size: 14px;
+    }
+
+    .delete-button {
+        background-color: #fa114f;
+        color: white;
+        font-family: 'neue2';
+        text-decoration: none;
+        padding: 0.6rem 2rem;
+        border: 1px solid #fa114f;
+        border-radius: 4px;
+        transition: .5s;
+        font-size: 14px;
+    }
+
+    .delete-button:hover {
+        background-color: transparent;
+        color: #fa114f;
+        font-family: 'neue2';
+        text-decoration: none;
+        padding: 0.6rem 2rem;
+        border: 1px solid #fa114f;
+        border-radius: 4px;
+        transition: .5s;
+        font-size: 14px;
+    }
+
+    .post-title-main {
+        display: flex;
+        /* align-content: stretch; */
+        width: 40%;
+        justify-content: flex-start;
+    }
+
+    .post-img {
+        width: 12rem;
+        height: 7rem;
+    }
+
+
+}
+
+@media (min-width: 1101px) and (max-width: 1200px) {
+    .dashbord-post {
+        padding: 6rem 4rem;
+    }
+
+    .post-title {
+        font-size: 20px;
+        font-family: 'neue2';
+        color: black;
+        transition: .5s;
+        cursor: pointer;
+    }
+
+    .update-button {
+        background-color: #115cfa;
+        color: white;
+        font-family: 'neue2';
+        text-decoration: none;
+        padding: 0.6rem 2rem;
+        border: 1px solid #115cfa;
+        border-radius: 4px;
+        transition: .5s;
+        margin-right: 1rem !important;
+        font-size: 14px;
+    }
+
+    .update-button:hover {
+        background-color: transparent;
+        color: #115cfa;
+        font-family: 'neue2';
+        text-decoration: none;
+        padding: 0.6rem 2rem;
+        border: 1px solid #115cfa;
+        border-radius: 4px;
+        transition: .5s;
+        margin-right: 1rem !important;
+        font-size: 14px;
+    }
+
+    .delete-button {
+        background-color: #fa114f;
+        color: white;
+        font-family: 'neue2';
+        text-decoration: none;
+        padding: 0.6rem 2rem;
+        border: 1px solid #fa114f;
+        border-radius: 4px;
+        transition: .5s;
+        font-size: 14px;
+    }
+
+    .delete-button:hover {
+        background-color: transparent;
+        color: #fa114f;
+        font-family: 'neue2';
+        text-decoration: none;
+        padding: 0.6rem 2rem;
+        border: 1px solid #fa114f;
+        border-radius: 4px;
+        transition: .5s;
+        font-size: 14px;
+    }
+
+    .post-title-main {
+        display: flex;
+        /* align-content: stretch; */
+        width: 45%;
+        justify-content: flex-start;
+    }
+
+    .post-img {
+        width: 13rem;
+        height: 8rem;
+    }
+
+
+}
+
+@media (min-width: 1201px) and (max-width: 1300px) {
+    .dashbord-post {
+        padding: 6rem 4rem;
+    }
+
+    .post-title {
+        font-size: 20px;
+        font-family: 'neue2';
+        color: black;
+        transition: .5s;
+        cursor: pointer;
+    }
+
+    .update-button {
+        background-color: #115cfa;
+        color: white;
+        font-family: 'neue2';
+        text-decoration: none;
+        padding: 0.6rem 2rem;
+        border: 1px solid #115cfa;
+        border-radius: 4px;
+        transition: .5s;
+        margin-right: 1rem !important;
+        font-size: 14px;
+    }
+
+    .update-button:hover {
+        background-color: transparent;
+        color: #115cfa;
+        font-family: 'neue2';
+        text-decoration: none;
+        padding: 0.6rem 2rem;
+        border: 1px solid #115cfa;
+        border-radius: 4px;
+        transition: .5s;
+        margin-right: 1rem !important;
+        font-size: 14px;
+    }
+
+    .delete-button {
+        background-color: #fa114f;
+        color: white;
+        font-family: 'neue2';
+        text-decoration: none;
+        padding: 0.6rem 2rem;
+        border: 1px solid #fa114f;
+        border-radius: 4px;
+        transition: .5s;
+        font-size: 14px;
+    }
+
+    .delete-button:hover {
+        background-color: transparent;
+        color: #fa114f;
+        font-family: 'neue2';
+        text-decoration: none;
+        padding: 0.6rem 2rem;
+        border: 1px solid #fa114f;
+        border-radius: 4px;
+        transition: .5s;
+        font-size: 14px;
+    }
+
+    .post-title-main {
+        display: flex;
+        /* align-content: stretch; */
+        width: 45%;
+        justify-content: flex-start;
+    }
+
+    .post-img {
+        width: 13rem;
+        height: 8rem;
+    }
+
+
+}
+
+@media (min-width: 1301px) and (max-width: 1400px) {
+    .dashbord-post {
+        padding: 6rem 4rem;
+    }
+
+    .post-title {
+        font-size: 20px;
+        font-family: 'neue2';
+        color: black;
+        transition: .5s;
+        cursor: pointer;
+    }
+
+    .update-button {
+        background-color: #115cfa;
+        color: white;
+        font-family: 'neue2';
+        text-decoration: none;
+        padding: 0.6rem 2rem;
+        border: 1px solid #115cfa;
+        border-radius: 4px;
+        transition: .5s;
+        margin-right: 1rem !important;
+        font-size: 14px;
+    }
+
+    .update-button:hover {
+        background-color: transparent;
+        color: #115cfa;
+        font-family: 'neue2';
+        text-decoration: none;
+        padding: 0.6rem 2rem;
+        border: 1px solid #115cfa;
+        border-radius: 4px;
+        transition: .5s;
+        margin-right: 1rem !important;
+        font-size: 14px;
+    }
+
+    .delete-button {
+        background-color: #fa114f;
+        color: white;
+        font-family: 'neue2';
+        text-decoration: none;
+        padding: 0.6rem 2rem;
+        border: 1px solid #fa114f;
+        border-radius: 4px;
+        transition: .5s;
+        font-size: 14px;
+    }
+
+    .delete-button:hover {
+        background-color: transparent;
+        color: #fa114f;
+        font-family: 'neue2';
+        text-decoration: none;
+        padding: 0.6rem 2rem;
+        border: 1px solid #fa114f;
+        border-radius: 4px;
+        transition: .5s;
+        font-size: 14px;
+    }
+
+    .post-title-main {
+        display: flex;
+        /* align-content: stretch; */
+        width: 45%;
+        justify-content: flex-start;
+    }
+
+    .post-img {
+        width: 13rem;
+        height: 8rem;
+    }
+
+
+}
+
+@media (min-width: 1401px) and (max-width: 1599px) {
+    .dashbord-post {
+        padding: 6rem 8rem;
+    }
+
+    .post-title {
+        font-size: 20px;
+        font-family: 'neue2';
+        color: black;
+        transition: .5s;
+        cursor: pointer;
+    }
+
+    .update-button {
+        background-color: #115cfa;
+        color: white;
+        font-family: 'neue2';
+        text-decoration: none;
+        padding: 0.8rem 2.5rem;
+        border: 1px solid #115cfa;
+        border-radius: 4px;
+        transition: .5s;
+        margin-right: 1rem !important;
+        font-size: 14px;
+    }
+
+    .update-button:hover {
+        background-color: transparent;
+        color: #115cfa;
+        font-family: 'neue2';
+        text-decoration: none;
+        padding: 0.8rem 2.5rem;
+        border: 1px solid #115cfa;
+        border-radius: 4px;
+        transition: .5s;
+        margin-right: 1rem !important;
+        font-size: 14px;
+    }
+
+    .delete-button {
+        background-color: #fa114f;
+        color: white;
+        font-family: 'neue2';
+        text-decoration: none;
+        padding: 0.8rem 2.5rem;
+        border: 1px solid #fa114f;
+        border-radius: 4px;
+        transition: .5s;
+        font-size: 14px;
+    }
+
+    .delete-button:hover {
+        background-color: transparent;
+        color: #fa114f;
+        font-family: 'neue2';
+        text-decoration: none;
+        padding: 0.8rem 2.5rem;
+        border: 1px solid #fa114f;
+        border-radius: 4px;
+        transition: .5s;
+        font-size: 14px;
+    }
+
+    .post-title-main {
+        display: flex;
+        /* align-content: stretch; */
+        width: 45%;
+        justify-content: flex-start;
+    }
+
+    .post-img {
+        width: 13rem;
+        height: 8rem;
+    }
+
+
+}

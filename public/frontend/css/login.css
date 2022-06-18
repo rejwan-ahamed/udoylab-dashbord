@@ -1,0 +1,73 @@
+/* custom fonts */
+@font-face {
+    font-family: 'neue1';
+    src: url(../fonts/NeueMachina-Light.otf);
+}
+@font-face {
+    font-family: 'neue2';
+    src: url(../fonts/NeueMachina-Regular.otf);
+}
+@font-face {
+    font-family: 'neue3';
+    src: url(../fonts/NeueMachina-Ultrabold.otf);
+}
+
+.form-signin {
+    max-width: 330px;
+    padding: 15px;
+}
+
+.form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.form-signin {
+    max-width: 330px;
+    padding: 15px;
+}
+
+.text-center {
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #fcfcfc;
+    font-family: 'neue2';
+    height: 100vh;
+}
+
+.login-button{
+    background-color: #115cfa;
+    padding: 1rem 0rem;
+    width: 100%;
+    color: white;
+    font-family: 'neue2';
+    border: 1px solid #115cfa;
+    border-radius: 4px;
+    transition: .5s;
+}
+.login-button:hover{
+    background-color: transparent;
+    padding: 1rem 0rem;
+    width: 100%;
+    color: #115cfa;
+    font-family: 'neue2';
+    border: 1px solid #115cfa;
+    border-radius: 4px;
+}
+
+input#floatingInput{
+    border: 1px solid #115bfa90;
+}
+
+input#floatingPassword {
+    border: 1px solid #115bfa90;
+}
