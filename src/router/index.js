@@ -4,6 +4,7 @@ import Cpanel from '../views/Dashbord.vue'
 import Add from '../components/Add.vue'
 import edit from "../components/Edit.vue";
 import logins from "../views/Login.vue";
+import Test from "../views/Login.vue";
 const routes = [
   {
     path: '/',
@@ -19,6 +20,11 @@ const routes = [
     path: '/add',
     name: 'Add',
     component: Add
+  },
+  {
+    path: '/test/:id',
+    name: 'Test',
+    component: Test
   },
   {
     path: '/logins',
