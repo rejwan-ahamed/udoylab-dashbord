@@ -64,7 +64,7 @@
 
             <div class="col-md-7 col-lg-8">
 
-                <vue-editor v-model="content"></vue-editor>
+                <QuillEditor :content="content" v-html="this.content"  />
                 <!-- <input type="text" v-model="test" > -->
 
                 <div class="editor-button-main">
@@ -103,12 +103,13 @@
 
 <script>
 import axios from "axios";
-import { VueEditor } from "vue3-editor";
+import { QuillEditor } from '@vueup/vue-quill'
+import '@vueup/vue-quill/dist/vue-quill.snow.css';
 export default {
 
     name: 'UpdateMain',
     components: {
-        VueEditor
+        QuillEditor
     },
     data() {
         return {
@@ -125,7 +126,7 @@ export default {
         }
     },
     methods: {
-
+    
         async update() {
             if (this.dataup.img1 == "" || this.dataup.img2 == "" || this.dataup.title == "" || this.dataup.tag == "" || this.dataup.description == "" || this.dataup.content == "") {
                 document.getElementById("error-warning").innerHTML = "<div class='px-5 pt-5'><div class='alert alert-warning alert-dismissible fade show'  role='alert'><strong>All fields required!</strong> You should check in on some of those fields below.<button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button</div><div/>"
@@ -142,7 +143,6 @@ export default {
 
                 document.getElementById("error-warning").innerHTML = "<div class='p-5'><div class='alert alert-success' role='alert'> post upload successfull</div ></div>"
 
-                window.scrollTo(0, 0)
                 console.log(upresults)
             }
         },
